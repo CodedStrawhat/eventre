@@ -1,0 +1,8 @@
+image size of speakers fix - done
+navigation day changes - done
+pages - 
+        about us,gallery
+speakers page edit
+schedule
+no sponsers page
+no news page

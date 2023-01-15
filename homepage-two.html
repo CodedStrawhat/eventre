@@ -54,6 +54,22 @@
 	#logoMain{
 		max-width: 4em;
 	}
+	.speaker-image img{
+		max-height: 500px;
+		object-fit: cover;
+	}
+	@media screen and (max-width:1400px) {
+		.speaker-image img{
+			max-height:305px;
+			object-fit: cover;
+		}
+	}
+	@media screen and (max-width:695px) {
+		.speaker-image img{
+			max-height:205px;
+			object-fit: cover;
+		}
+	}
 </style>
 
 <body class="body-wrapper">
@@ -77,13 +93,6 @@
         <li class="nav-item dropdown active">
           <a class="nav-link" href="homepage-two.html">Home 
           </a>
-          <!--
-
-			  <ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="index.html">Homepage</a></li>
-				  <li><a class="dropdown-item" href="homepage-two.html">Homepage 2</a></li>
-				</ul>
-			-->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="speakers.html">Speakers
@@ -94,49 +103,11 @@
           <!-- Dropdown list -->
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
-            <li><a class="dropdown-item" href="single-speaker.html">Single Speaker</a></li>
             <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-            <li><a class="dropdown-item" href="gallery-two.html">Gallery-02</a></li>
-            <li><a class="dropdown-item" href="testimonial.html">Testimonial</a></li>
-            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
-            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
-            <li><a class="dropdown-item" href="404.html">404</a></li>
-                    
-            <li class="dropdown dropdown-submenu dropright">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-    
-              <ul class="dropdown-menu" aria-labelledby="dropdown0301">
-                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-              </ul>
-            </li>
           </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="schedule.html">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sponsors.html">Sponsors</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#!" data-toggle="dropdown">News <i class="fa fa-angle-down"></i>
-          </a>
-          <!-- Dropdown list -->
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="news.html">News without sidebar</a></li>
-            <li><a class="dropdown-item" href="news-right-sidebar.html">News with right sidebar</a></li>
-            <li><a class="dropdown-item" href="news-left-sidebar.html">News with left sidebar</a></li>
-            <li><a class="dropdown-item" href="news-single.html">News Single</a></li>
-
-            <li class="dropdown dropdown-submenu dropleft">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-    
-              <ul class="dropdown-menu" aria-labelledby="dropdown0501">
-                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-              </ul>
-            </li>
-          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -185,7 +156,7 @@
 		<div class="row">
 			<div class="col-lg-5 col-md-6 align-self-center">
 				<div class="image-block two bg-about">
-					<img class="img-fluid" src="images/speakers/featured-speaker-two.jpg" alt="">
+					<img class="img-fluid" src="images/background/rajivshekhar.jpg" alt="">
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 align-self-center ml-lg-auto">
@@ -241,14 +212,14 @@
 						</div>
 					</div>
 					<div class="speaker-image">
-						<img src="images/speakers/G S Rao.jpg" alt="speaker" class="img-fluid">
+						<img src="images/speakers/G S Raocropped.jpg" alt="speaker" class="img-fluid">
 						<div class="primary-overlay text-center">
 							<h5>G. S. RAO</h5>
 							<p>Professor</p>
 						</div>
 					</div>
 					<div class="speaker-image">
-						<img src="images/speakers/Mohit Agarwal.jpg" alt="speaker" class="img-fluid">
+						<img src="images/speakers/Mohit Agarwalcropped.jpg" alt="speaker" class="img-fluid">
 						<div class="primary-overlay text-center">
 							<h5>MOHIT AGARWAL</h5>
 							<p>Professor</p>
@@ -312,7 +283,13 @@
 					<ul class="nav nav-pills text-center">
 						<li class="nav-item">
 						</li>
-						<li class="vnav-item">
+						<li class="nav-item">
+							<a class="nav-link" href="#nov20" data-toggle="pill">
+								Day-01
+								<span>23 December</span>
+							</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#nov21" data-toggle="pill">
 								Day-02
 								<span>24 December</span>
@@ -595,65 +572,6 @@ Resource Exploration</div>
 </section>
 
 <!--====  End of Schedule  ====-->
-
-<!--=============================
-=            Feature            =
-==============================-->
-
-<section class="ticket-feature">
-	<div class="container-fluid m-0 p-0">
-		<div class="row p-0 m-0">
-			<div class="col-lg-7 p-0 m-0">
-				<div class="block bg-timer overlay-dark text-center">
-					<div class="section-title white m-0">
-						<h3>Limited Audience <span class="alternate">Seats</span></h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm</p>
-					</div>
-					<!-- Coundown Timer -->
-					<div class="timer"></div>
-					<a href="https://forms.gle/rxtNbXGzu4oXCcBK6" class="btn btn-main-md" target="_blank">Register Now</a>
-				</div>
-			</div>
-			<div class="col-lg-5 p-0">
-				<div class="block-2">
-					<div class="row no-gutters">
-						<div class="col-6">
-							<!-- Service item -->
-							<div class="service-item">
-								<i class="fa fa-microphone"></i>
-								<h5>8 Speakers</h5>
-							</div>
-						</div>
-						<div class="col-6">
-							<!-- Service item -->
-							<div class="service-item">
-								<i class="fa fa-flag"></i>
-								<h5>500 + Seats</h5>
-							</div>
-						</div>
-						<div class="col-6">
-							<!-- Service item -->
-							<div class="service-item">
-								<i class="fa fa-ticket"></i>
-								<h5>300 tickets</h5>
-							</div>
-						</div>
-						<div class="col-6">
-							<!-- Service item -->
-							<div class="service-item">
-								<i class="fa fa-calendar"></i>
-								<h5>3 days event</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--====  End of Feature  ====-->
-
 
 <!--=============================
 =            Gallery            =
