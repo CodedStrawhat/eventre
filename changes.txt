@@ -10,3 +10,8 @@ new page -
         except saurab sir
         core comittee and advisory committee in table format only
 at every register now button open
+
+New changes -
+        24 - 26 march
+        home page photo change
+        remove red color on hover at speaker photos
