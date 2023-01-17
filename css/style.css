@@ -220,13 +220,17 @@ button:hover {
 }
 
 .bg-banner-two {
-  background: url(../images/background/rajivshekhar3.jpg) no-repeat;
+  background: linear-gradient(rgba(29,38,113,0.8),rgba(195, 55, 100, 0.8)), url(../images/gallery/gallery9.jpeg) no-repeat;
   background-size: cover;
   background-position: right center;
 }
 @media (max-width: 767px) {
   .bg-banner-two {
-    background-position: center center;
+    background-position: center right;
+    
+  }
+  .bg-banner-two {
+    /* opacity: 0.3; */
   }
 }
 
